@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1= title
+  p hello #{member} 
+   if logstatus == false
+     a(href="Login.html") 登入
+   else
+     a(href="./logout") 登出
+   , Welcome to #{title} 
+  p 未斷線(登出)情況,己 #{time} 次登入!
